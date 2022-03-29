@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>age calculator</title>
+  </head>
+  <body>
+    <h1>Age in Days</h1>
+    <p>
+        Enter the age in years:
+        <input type="text" id="txtAge" />
+        <input type="button" value="Calculate" onClick=calcAge("age") />
+    </p>
+    <script>
+        function calcAge(age) {
+            var age = document.getElementById('txtAge').value;
+            document.write("<p>The age in days is : " + (age * 365) + "</p>");
+        }
+    </script>
+  </body>
+</html>
